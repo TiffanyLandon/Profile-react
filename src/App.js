@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import 'bootstrap/dist/css/bootstarp.min.css';
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
 
 
 
 function App() {
   return (
     <div className="App">
-      <h2>Tiffany</h2>
+      <header>
+        <Navbar></Navbar>
+      </header>
     </div>
   );
 }
