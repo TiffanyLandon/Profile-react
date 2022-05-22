@@ -1,20 +1,12 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import About from './components/About'
+import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstarp.min.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header>
-      <Navbar></Navbar>
-      </header>
-      <div className='content'>
-     <main>
-       <About></About>
-     </main>
-      </div>
+      <h2>Tiffany</h2>
     </div>
   );
 }
