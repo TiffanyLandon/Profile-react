@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <Navbar></Navbar>
-      </header>
+    <div>
+      <Header />
+      <Footer />
     </div>
   );
 }

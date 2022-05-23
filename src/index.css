@@ -4,9 +4,9 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
-  font-size: 1.5rem;
+  color: rgb(17, 15, 15);
 }
+
 /***NavBar***/
 .navbar {
   padding: 20px;
@@ -22,17 +22,40 @@
   margin-left: auto;
 }
 
-nav a.nav-link { 
-text-transform: uppercase;
+nav a.nav-link {
+  text-transform: uppercase;
 }
 
-.navbar-nav> li > a:hover {
+.navbar-nav>li>a:hover {
   margin-right: 0.75rem;
   color: #f1356d !important;
 }
 
-.navbar-brand{
-color: #f1356d !important;
+.navbar-brand {
+  color: #f1356d !important;
 
 }
 
+/*** Header **/
+.header-wrapper {
+  background: rgb(172, 170, 170);
+  font-size: 1rem !important;
+}
+
+
+/***About page**/
+.abouttext {
+  font-size: 20px;
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+}
+
+.aboutimg {
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;
+  border-radius: 50%;
+}

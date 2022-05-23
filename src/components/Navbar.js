@@ -1,10 +1,10 @@
 import React from 'react';
-import Profilepic from '../profilepic.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars} from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
+const Navbar = ({currentPage, handlePageChange}) => {
     return (
+        <div>
         <nav className="navbar navbar-expand-md navbar-light">
             <div className='container'>
                 <a className="navbar-brand ml-auto" href="#">Tiffany Bryan</a>
@@ -13,22 +13,23 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse ml-auto" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link " href="#">About</a>
+                        <li className="nav-item active p-4">
+                            <a className="nav-link " href="#about" onClick ={() => handlePageChange("About") }>About Me</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Protfolio</a>
+                        <li className="nav-item p-4">
+                            <a className="nav-link" href="#portfolio" onClick={() => handlePageChange('Portfolio')}>Protfolio</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Resume</a>
+                        <li className="nav-item p-4">
+                            <a className="nav-link" href="#resume" onClick={()=> handlePageChange('Resume')}>Resume</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Contact</a>
+                        <li className="nav-item p-4">
+                            <a className="nav-link" href="#contact" onClick={()=> handlePageChange('Contact')}>Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        </div>
     );
 }
 
